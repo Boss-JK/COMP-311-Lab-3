@@ -11,16 +11,19 @@ public class question4 {
     // Creating a scanner
     Scanner console = new Scanner (System.in);
 
-    // Ask the user to enter 1 or 2
-    System.out.print("Enter one or two: ");
-    // Reading the user's input
-    int number = console.nextInt();
-    console.close();
+    int number;
 
-    do{
+    do{   
         System.out.println("1. Continue");
         System.out.println("2. Exit");
+        // Ask the user to enter 1 or 2
+        System.out.print("Enter one or two: ");
+        // Reading the user's input
+        number = console.nextInt();
+        if ((number != 1) && (number != 2)){
+            System.out.println("Invalid input!!");
+        }
     } while (number != 2);
-
+           console.close();
     }
 }
