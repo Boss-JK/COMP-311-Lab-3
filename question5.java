@@ -10,9 +10,14 @@ public class question5 {
         // Creating a scanner
         Scanner console = new Scanner (System.in);
 
+        int number;
         do{
-            // Ask user
-        }
+            // Ask user to enter a number between 1 and 10
+            System.out.print("Enter a number between 1 and 10: ");
+            // Reading the user's number
+            number = console.nextInt();
+        } while (number != 0 && number != 11);
+        console.close();
     }
     
 }
